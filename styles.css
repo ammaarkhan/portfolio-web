@@ -34,7 +34,7 @@ body, html {
 }
 
 .intro-text h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
@@ -52,7 +52,7 @@ body, html {
 }
 
 .work-section h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
@@ -65,10 +65,33 @@ body, html {
     border-radius: 8px;
     font-size: 1.2em;
     transition: transform 0.2s;
+    text-align: left;
+    color: white;
+}
+
+.work-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.work-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.work-date {
+    font-size: 1em;
+    color: #aaa;
+}
+
+.work-details {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .work-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 @keyframes fadeIn {
