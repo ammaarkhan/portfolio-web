@@ -26,7 +26,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #121212;
+    background-color: black;
 }
 
 .intro-text {
@@ -48,16 +48,16 @@ body, html {
 .work-section {
     padding: 20px;
     text-align: center;
-    background-color: #1a1a1a;
+    background-color: black;
 }
 
 .work-section h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
 .work-card {
-    background-color: #333;
+    background-color: #2f2f2f;
     padding: 20px;
     margin: 10px auto;
     width: 80%;
@@ -88,6 +88,15 @@ body, html {
 .work-details {
     list-style-type: disc;
     padding-left: 20px;
+}
+
+.read-more-link {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+.read-more-link:hover {
+    text-decoration: underline;
 }
 
 .work-card:hover {
