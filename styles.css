@@ -36,6 +36,7 @@ html {
 
 #play-button {
   font-size: 14px;
+  font-weight: bold;
   background-color: #ff9900;
   border: none;
   border-radius: 8px;

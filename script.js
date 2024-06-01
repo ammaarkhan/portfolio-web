@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       audio
         .play()
         .then(() => {
-          playButton.innerText = "click here to reach the floor";
+          playButton.innerText = "click here to reach the floor :)";
         })
         .catch((error) => {
           console.error("Error playing audio:", error);
