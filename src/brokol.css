@@ -22,8 +22,50 @@ html {
 .brokol-page p {
   font-size: 1.2em;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.brokol-image {
+  width: 25%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.follow-us {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.follow-us p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.follow-us a {
+  color: #05c205;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.follow-us a:hover {
+  text-decoration: underline;
 }
 
 .back-link {
