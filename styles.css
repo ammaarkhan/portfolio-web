@@ -33,6 +33,20 @@ body, html {
     text-align: center;
 }
 
+#play-button {
+    font-size: 14px; 
+    background-color: #ff9900;
+    border: none;
+    border-radius: 8px; 
+    padding: 5px 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#play-button:hover {
+    background-color: #ffcc00; 
+}
+
 .intro-text h2 {
     font-size: 3em;
     margin-bottom: 20px;
