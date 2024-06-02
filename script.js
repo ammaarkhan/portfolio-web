@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   playButton.addEventListener("click", function () {
     if (isPlaying) {
       audio.pause();
-      playButton.innerText = "click here for an enhanced viewing experience";
+      playButton.innerText = "click here for an enhanced viewing experience :)";
     } else {
       audio
         .play()
