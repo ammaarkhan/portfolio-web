@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParkView @ BC HACKS 5 (1st Place)</title>
+    <link rel="stylesheet" href="parkview.css" />
+  </head>
+  <body>
+    <div class="parkview-page">
+      <h1>ParkView @ BC HACKS 5 (1st Place)</h1>
+      <img src="./parkview.png" alt="parkview" class="parkview-image" />
+      <section class="section">
+        <h2>What did we do?</h2>
+        <p>
+          I wasn't planning to participate in BC Hacks 5, but my friend Omar
+          Ankit convinced me to join him. We ended up winning 1st place with our
+          project ParkView. When deciding what to build, we wanted to steer away
+          from anything related to social networks and focus on creating
+          something valuable on its own. We brainstormed the problems we face in
+          our daily lives and initially considered building an app to help
+          students find study spaces on campus, as it's a nightmare during exam
+          season.
+        </p>
+        <p>
+          While in the library, we discussed the idea with a librarian, who
+          liked it but encouraged us to tackle even bigger problems with the
+          same concept. That's how we pivoted to PARKING. Our campus is known to
+          be a tough place to find parking. So we decided to build ParkView, a
+          parking tracker that provides real-time monitoring of parking spaces,
+          integrated with a user-facing mobile app - updating the graphical map
+          of the parking space in real-time.
+        </p>
+      </section>
+      <section class="section">
+        <h2>How we did it?</h2>
+        <p>
+          We used OpenCV for image processing to detect whether parking spots
+          were occupied by cars through live video feed or prerecorded footage.
+          We created a custom python graphical user interface (GUI) that would
+          allow the user to set the parking positions, which were stored in a
+          JSON file. That same JSON would be sent to our user-facing mobile app,
+          built using React Native. The mobile app displayed available parking
+          spots in real time with green/red boxes, updating the map as cars came
+          and went.
+        </p>
+        <div class="follow-us">
+          <p>
+            Learn more here:
+            <a href="https://github.com/ammaarkhan/parkview" target="_blank"
+              >GitHub</a
+            >
+            |
+            <a href="https://devpost.com/software/parkview" target="_blank"
+              >DevPost</a
+            >
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Ok but why?</h2>
+        <p>
+          The applications for ParkView are vast. We could see this being used
+          in malls, airports, and any other parking lots where available spaces
+          are time consuming to find. Beyond the obvious benefits of convenience
+          and time-saving, this could be a game changer for people with
+          disabilities who need to find the closest parking spot. Additionally,
+          ParkView could be integrated into smart city infrastructures to
+          monitor parking spaces and provide real-time data to city planners. It
+          could help reduce traffic congestion, optimize parking management, and
+          enhance urban planning.
+        </p>
+      </section>
+      <section class="section">
+        <h2>Gallery</h2>
+        <p>Images to be added soon...</p>
+      </section>
+      <a href="../index.html" class="back-link">Back to Portfolio</a>
+    </div>
+  </body>
+</html>
