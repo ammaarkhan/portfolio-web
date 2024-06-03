@@ -39,6 +39,7 @@ html {
 
 .description-section {
   height: 100vh;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +141,7 @@ html {
 }
 
 .work-card:hover {
-  transform: scale(1.01);
+  transform: scale(1.04);
 }
 
 .green-card {
