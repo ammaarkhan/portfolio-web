@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let isPlaying = false;
 
-  audio.volume = 0.15;
+  audio.volume = 0.1;
 
   const observerOptions = {
     root: null,
