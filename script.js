@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   playButton.addEventListener("click", function () {
     if (isPlaying) {
       audio.pause();
-      playButton.innerText = "play elevator music :)";
+      playButton.innerText = "play elevator music 🎵";
     } else {
       audio
         .play()
