@@ -19,7 +19,22 @@ html {
 
 .landing-page h1 {
   font-size: 5em;
-  animation: fadeIn 2s ease-in-out;
+  animation: float 4s ease-in-out infinite;
+}
+
+.landing-page .intro {
+  color: #979797;
+  font-weight: lighter;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
 }
 
 .description-section {
@@ -30,6 +45,14 @@ html {
   background-color: black;
 }
 
+.description-section p {
+  color: #979797;
+}
+
+.description-section p strong {
+  color: white;
+}
+
 .intro-text {
   text-align: center;
 }
@@ -37,9 +60,9 @@ html {
 #play-button {
   font-size: 14px;
   font-weight: bold;
-  background-color: #ff9900;
+  background-color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 5px 10px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -47,7 +70,7 @@ html {
 }
 
 #play-button:hover {
-  background-color: #d07d01;
+  background-color: #979797;
 }
 
 .intro-text h2 {
@@ -154,7 +177,7 @@ html {
   font-size: 14px;
   font-weight: bold;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 5px 10px;
   cursor: pointer;
   transition: background-color 0.3s;

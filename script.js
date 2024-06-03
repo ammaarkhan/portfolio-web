@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let isPlaying = false;
 
+  audio.volume = 0.15;
+
   const observerOptions = {
     root: null,
     rootMargin: "0px",
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   playButton.addEventListener("click", function () {
     if (isPlaying) {
       audio.pause();
-      playButton.innerText = "click here for an enhanced viewing experience :)";
+      playButton.innerText = "play elevator music :)";
     } else {
       audio
         .play()
