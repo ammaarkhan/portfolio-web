@@ -44,6 +44,10 @@ html {
   display: block;
 }
 
+.brokol-image-wide {
+  width: 50%;
+}
+
 .section h2 {
   font-size: 2em;
   margin-bottom: 10px;
