@@ -41,6 +41,4 @@ Redesigned July 3, 2026 from the old neon-dashed-cards look to "a typeset person
 
 ## Current state (updated Jul 8, 2026)
 
-Full redesign + mental models library deployed to production. Open items:
-
-- Happipad row could use 1-2 real accomplishment bullets from Ammaar (currently just role/company/year).
+Full redesign + mental models library deployed to production. No open items.
