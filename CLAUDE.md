@@ -18,11 +18,12 @@ Redesigned July 3, 2026 from the old neon-dashed-cards look to "a typeset person
 - **Voice**: lowercase, light emoji touch (👋 🛗), prose over bullet points. The elevator-music easter egg lives in the hero ("an elevator pitch deserves elevator music!"); the Bukowski quote closes the page as an epigraph.
 - **No em dashes in site copy** (Ammaar's rule, Jul 2026). Use commas, periods, or middots instead. Obsidian note content on models.html is published verbatim and is exempt.
 - Positioning (Jul 2026): The ADHD Weasel is a weekly newsletter helping 20k+ late-diagnosed women understand the science behind ADHD and feel less alone. Threads community: 287k. Use these numbers, not the old 18k/55k.
+- Canonical links: newsletter adhdweasel.com &middot; threads.com/@theadhdweasel &middot; instagram.com/theadhdweasel &middot; linkedin.com/in/ammaarakhan (extra "a" is correct) &middot; github.com/ammaarkhan &middot; ammaarkhan03@gmail.com. Homepage `elsewhere` order: linkedin, email, newsletter, threads, github.
 - Keep this personality — don't sanitize it, and don't reintroduce decoration (cards, borders, colors) that fights the quiet.
 
 ## Structure
 
-- `index.html` + `styles.css` + `script.js` — homepage: hero → now → before (index rows) → notebook → elsewhere → epigraph. `script.js` only handles the elevator-music toggle (`lift.mp3`, optimistic UI, loops).
+- `index.html` + `styles.css` + `script.js` — homepage: hero → now → notebook → before (index rows) → elsewhere → epigraph. `script.js` only handles the elevator-music toggle (`lift.mp3`, optimistic UI, loops).
 - `models.html` + `models.css` — **generated page**: the mental-models library. Never edit `models.html` by hand; regenerate it (see workflow).
 - `scripts/build_models.py` — generator for `models.html`.
 - `src/brokol.html` + `src/parkview.html` — story pages, both styled by shared `src/story.css` (plus `../styles.css` for vars/atmosphere). Founder log on brokol is append-only, newest on top.
@@ -38,13 +39,9 @@ Redesigned July 3, 2026 from the old neon-dashed-cards look to "a typeset person
 4. Check both desktop and narrow/mobile widths — the audience largely arrives from social on phones.
 5. Commit and push only when Ammaar says to (push = live deploy).
 
-## Current state (July 3, 2026)
+## Current state (updated Jul 8, 2026)
 
-Working tree has the full redesign + models library, verified locally, **not yet committed or pushed**. Models content approved by Ammaar (Jul 8). Canonical links: newsletter = adhdweasel.com, threads = @theadhdweasel (threads.com), linkedin = /in/ammaarakhan. `elsewhere` order: linkedin, email, newsletter, threads, github.
+Full redesign + mental models library deployed to production. Open items:
 
-Jul 8: story pages restyled into the design system (shared `src/story.css`; old brokol.css/parkview.css deleted), Marine Design Club removed from the site, parkview's empty gallery placeholder dropped, story-page numbers updated to 20k+/287k.
-
-Still open before/after deploy:
-
-- 1–2 real bullets for the Happipad era (currently just role/company/year).
-- Confirm the app-shutdown date on the story page (log says June 2025; prose says "mid-2025").
+- Happipad row could use 1-2 real accomplishment bullets from Ammaar (currently just role/company/year).
+- Confirm the app-shutdown date on the ADHD Weasel story page (log says June 2025; prose says "mid-2025").
