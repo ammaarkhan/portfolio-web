@@ -38,6 +38,7 @@ Redesigned July 3, 2026 from the old neon-dashed-cards look to "a typeset person
 3. Preview locally: `python3 -m http.server 8000` from repo root. Note: python's server can't stream the MP3 (no range requests), so the audio stalling locally is expected — it works on GitHub Pages.
 4. Check both desktop and narrow/mobile widths — the audience largely arrives from social on phones.
 5. Commit and push only when Ammaar says to (push = live deploy).
+6. After pushing, verify the deploy: poll `gh api repos/ammaarkhan/portfolio-web/pages/builds/latest --jq '.status'` until it reads "built" (typically under a minute), then curl ammaarkhan.com for a string from the change.
 
 ## Current state (updated Jul 8, 2026)
 
