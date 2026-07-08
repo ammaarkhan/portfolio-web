@@ -1,0 +1,116 @@
+/* mental models — library page */
+
+.models-page {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+.crumb {
+  padding-top: 48px;
+}
+
+.crumb a {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.crumb a:hover {
+  color: var(--accent);
+}
+
+.models-hero {
+  padding: 72px 0 48px;
+}
+
+.models-title {
+  margin: 0 0 22px;
+  font-family: var(--serif);
+  font-weight: 340;
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.models-lede {
+  margin: 0 0 18px;
+  max-width: 34em;
+  color: var(--muted);
+}
+
+.models-meta {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+
+.model {
+  padding: 46px 0;
+  border-top: 1px solid var(--hairline);
+}
+
+.model h2 {
+  margin: 0 0 16px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.45rem;
+  line-height: 1.25;
+}
+
+.model p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  max-width: 38em;
+}
+
+.model p:last-child,
+.model ul:last-child {
+  margin-bottom: 0;
+}
+
+.model strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.model em {
+  color: var(--ink);
+}
+
+.model ul {
+  margin: 0 0 14px;
+  padding-left: 1.25em;
+  color: var(--muted);
+}
+
+.model li {
+  margin-bottom: 6px;
+}
+
+.model li::marker {
+  color: var(--faint);
+}
+
+.model-source {
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.models-coda {
+  padding-top: 72px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .models-hero {
+    padding: 56px 0 36px;
+  }
+
+  .model {
+    padding: 36px 0;
+  }
+}

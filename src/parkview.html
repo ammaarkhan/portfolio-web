@@ -3,78 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ParkView @ BC HACKS 5 (1st Place)</title>
-    <link rel="stylesheet" href="parkview.css" />
+    <title>ParkView &middot; Ammaar Khan</title>
+    <meta
+      name="description"
+      content="ParkView, a real-time parking tracker built in 36 hours that won 1st place at BC HACKS 5."
+    />
+    <meta property="og:title" content="ParkView &middot; Ammaar Khan" />
+    <meta
+      property="og:description"
+      content="ParkView, a real-time parking tracker built in 36 hours that won 1st place at BC HACKS 5."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://ammaarkhan.com/src/parkview.html"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%91%8B</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,400;1,9..144,340;1,9..144,400&family=Karla:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="story.css" />
   </head>
   <body>
-    <div class="parkview-page">
-      <h1>ParkView @ BC HACKS 5 (1st Place)</h1>
-      <img src="./parkview.png" alt="parkview" class="parkview-image" />
-      <section class="section">
-        <h2>What did we do?</h2>
+    <div class="glow" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <main class="story-page">
+      <nav class="crumb reveal"><a href="../">&larr; ammaar khan</a></nav>
+
+      <header class="story-hero reveal">
+        <div class="story-hero-text">
+          <p class="label">bc hacks 5 &middot; 1st place</p>
+          <h1>ParkView</h1>
+          <p class="story-lede">
+            A real-time parking tracker built in 36 hours at BC HACKS 5 in
+            January 2024. First place, lots of coffee, minimal sleep.
+          </p>
+          <div class="story-actions">
+            <a
+              href="https://github.com/ammaarkhan/parkview"
+              target="_blank"
+              rel="noopener noreferrer"
+              >github &rarr;</a
+            >
+            <a
+              href="https://devpost.com/software/parkview"
+              target="_blank"
+              rel="noopener noreferrer"
+              >devpost &rarr;</a
+            >
+          </div>
+        </div>
+        <img
+          src="./parkview.png"
+          alt="ParkView logo"
+          class="story-hero-image"
+        />
+      </header>
+
+      <section class="section-story reveal" aria-labelledby="what-label">
+        <h2 class="label" id="what-label">what did we do?</h2>
         <p>
-          I would like to thank my friend Omar Ankit for inviting me to join his
-          team. We ended up winning 1st place with our project ParkView. When
-          deciding what to build, we wanted to steer away from anything related
-          to social networks and focus on creating something valuable on its
-          own. We brainstormed the problems we face in our daily lives and
-          initially considered building an app to help students find study
+          I would like to thank my friend Omar Ankit for inviting me to join
+          his team. We ended up winning 1st place with our project ParkView.
+          When deciding what to build, we wanted to steer away from anything
+          related to social networks and focus on creating something valuable
+          on its own. We brainstormed the problems we face in our daily lives
+          and initially considered building an app to help students find study
           spaces on campus, as it's a nightmare during exam season.
         </p>
         <p>
           While in the library, we discussed the idea with a librarian, who
           liked it but encouraged us to tackle even bigger problems with the
-          same concept. That's how we pivoted to PARKING. Our campus is known to
-          be a tough place to find parking. So we decided to build ParkView, a
-          parking tracker that provides real-time monitoring of parking spaces,
-          integrated with a user-facing mobile app - updating the graphical map
-          of the parking space in real-time.
+          same concept. That's how we pivoted to PARKING. Our campus is known
+          to be a tough place to find parking. So we decided to build ParkView,
+          a parking tracker that provides real-time monitoring of parking
+          spaces, integrated with a user-facing mobile app, updating the
+          graphical map of the parking space in real-time.
         </p>
       </section>
-      <section class="section">
-        <h2>How we did it?</h2>
+
+      <section class="section-story" aria-labelledby="how-label">
+        <h2 class="label" id="how-label">how we did it?</h2>
         <p>
           We used OpenCV for image processing to detect whether parking spots
           were occupied by cars through live video feed or prerecorded footage.
           We created a custom python graphical user interface (GUI) that would
           allow the user to set the parking positions, which were stored in a
-          JSON file. That same JSON would be sent to our user-facing mobile app,
-          built using React Native. The mobile app displayed available parking
-          spots in real time with green/red boxes, updating the map as cars came
-          and went.
+          JSON file. That same JSON would be sent to our user-facing mobile
+          app, built using React Native. The mobile app displayed available
+          parking spots in real time with green/red boxes, updating the map as
+          cars came and went.
         </p>
       </section>
-      <section class="section">
-        <h2>Ok but why?</h2>
+
+      <section class="section-story" aria-labelledby="why-label">
+        <h2 class="label" id="why-label">ok but why?</h2>
         <p>
           The applications for ParkView are vast. We could see this being used
           in malls, airports, and any other parking lots where available spaces
-          are time consuming to find. Beyond the obvious benefits of convenience
-          and time-saving, this could be a game changer for people with
-          disabilities who need to find the closest parking spot. Additionally,
-          ParkView could be integrated into smart city infrastructures to
-          monitor parking spaces and provide real-time data to city planners. It
-          could help reduce traffic congestion, optimize parking management, and
-          enhance urban planning.
+          are time consuming to find. Beyond the obvious benefits of
+          convenience and time-saving, this could be a game changer for people
+          with disabilities who need to find the closest parking spot.
+          Additionally, ParkView could be integrated into smart city
+          infrastructures to monitor parking spaces and provide real-time data
+          to city planners. It could help reduce traffic congestion, optimize
+          parking management, and enhance urban planning.
         </p>
-        <div class="follow-us">
-          <p>
-            Learn more here:
-            <a href="https://github.com/ammaarkhan/parkview" target="_blank"
-              >GitHub</a
-            >
-            |
-            <a href="https://devpost.com/software/parkview" target="_blank"
-              >DevPost</a
-            >
-          </p>
-        </div>
       </section>
-      <section class="section">
-        <h2>Gallery</h2>
-        <p>Images to be added soon...</p>
-      </section>
-      <a href="../" class="back-link">Back to Portfolio</a>
-    </div>
+    </main>
   </body>
 </html>

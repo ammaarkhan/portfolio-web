@@ -1,45 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
   const audio = document.getElementById("background-music");
-  const descriptionSection = document.querySelector(".description-section");
   const playButton = document.getElementById("play-button");
-
-  let isPlaying = false;
+  const pitch = playButton.closest(".pitch");
+  const dot = '<span class="pitch-dot" aria-hidden="true"></span>';
 
   audio.volume = 0.1;
+  audio.loop = true;
 
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5,
-  };
-
-  const observerCallback = (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting && isPlaying) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
-    });
-  };
-
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
-  observer.observe(descriptionSection);
+  function setUI(playing) {
+    pitch.classList.toggle("playing", playing);
+    playButton.innerHTML = dot + (playing ? "going up&hellip; 🛗" : "elevator music 🛗");
+  }
 
   playButton.addEventListener("click", function () {
-    if (isPlaying) {
-      audio.pause();
-      playButton.innerText = "play elevator music 🎵";
+    if (audio.paused) {
+      setUI(true);
+      audio.play().catch(function (error) {
+        console.error("Error playing audio:", error);
+        setUI(false);
+      });
     } else {
-      audio
-        .play()
-        .then(() => {
-          playButton.innerText = "click here to reach the floor :)";
-        })
-        .catch((error) => {
-          console.error("Error playing audio:", error);
-        });
+      audio.pause();
+      setUI(false);
     }
-    isPlaying = !isPlaying;
   });
 });

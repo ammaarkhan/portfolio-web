@@ -1,0 +1,200 @@
+/* story pages — shared layout in the site's quiet design system */
+
+.story-page {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+.crumb {
+  padding-top: 48px;
+}
+
+.crumb a {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.crumb a:hover {
+  color: var(--accent);
+}
+
+/* ---- hero ---- */
+
+.story-hero {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 72px 0 56px;
+}
+
+.story-hero .label {
+  margin-bottom: 20px;
+}
+
+.story-hero h1 {
+  margin: 0 0 22px;
+  font-family: var(--serif);
+  font-weight: 340;
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.story-lede {
+  margin: 0;
+  max-width: 32em;
+  color: var(--muted);
+}
+
+.story-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: 28px;
+}
+
+.story-hero-image {
+  width: 150px;
+  border-radius: 12px;
+  border: 1px solid var(--hairline);
+  flex-shrink: 0;
+  margin-top: 48px;
+}
+
+/* ---- sections ---- */
+
+.section-story {
+  padding: 56px 0;
+  border-top: 1px solid var(--hairline);
+}
+
+.section-story p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  max-width: 38em;
+}
+
+.section-story p:last-child {
+  margin-bottom: 0;
+}
+
+.section-story p strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ---- metrics ---- */
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 32px 28px;
+}
+
+.metric-value {
+  display: block;
+  font-family: var(--serif);
+  font-size: 2.1rem;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.metric-label {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+
+.metric-note {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--faint);
+}
+
+/* ---- log ---- */
+
+.log-entry {
+  padding: 26px 0;
+}
+
+.log-entry + .log-entry {
+  border-top: 1px solid var(--hairline);
+}
+
+.log-date {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: var(--faint);
+}
+
+.log-entry h3 {
+  margin: 0 0 10px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+/* ---- gallery ---- */
+
+.story-figure {
+  margin: 0 0 36px;
+}
+
+.story-figure:last-child {
+  margin-bottom: 0;
+}
+
+.story-image {
+  display: block;
+  width: auto;
+  max-width: min(420px, 100%);
+  height: auto;
+  max-height: 620px;
+  margin: 0 0 12px;
+  border-radius: 12px;
+  border: 1px solid var(--hairline);
+}
+
+.story-image-wide {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 0 0 12px;
+  border-radius: 12px;
+  border: 1px solid var(--hairline);
+}
+
+.story-figure figcaption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--faint);
+  max-width: 38em;
+}
+
+/* ---- small screens ---- */
+
+@media (max-width: 600px) {
+  .story-hero {
+    flex-direction: column-reverse;
+    padding: 56px 0 44px;
+  }
+
+  .story-hero-image {
+    margin-top: 0;
+  }
+
+  .section-story {
+    padding: 44px 0;
+  }
+}
