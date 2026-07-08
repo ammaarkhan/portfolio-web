@@ -44,4 +44,3 @@ Redesigned July 3, 2026 from the old neon-dashed-cards look to "a typeset person
 Full redesign + mental models library deployed to production. Open items:
 
 - Happipad row could use 1-2 real accomplishment bullets from Ammaar (currently just role/company/year).
-- Confirm the app-shutdown date on the ADHD Weasel story page (log says June 2025; prose says "mid-2025").
