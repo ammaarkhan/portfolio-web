@@ -43,3 +43,7 @@ Redesigned July 3, 2026 from the old neon-dashed-cards look to "a typeset person
 ## Current state (updated Jul 8, 2026)
 
 Full redesign + mental models library deployed to production. No open items.
+
+## Sibling project
+
+`~/Desktop/projects/life` — Ammaar's private life tracker (life.ammaarkhan.com), same design system, separate repos (`life-web` public shell + `life-data` private). It has its own CLAUDE.md; work on it from that folder, not here.
