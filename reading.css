@@ -1,0 +1,112 @@
+/* reading — books by month */
+
+.reading-page {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+.crumb {
+  padding-top: 48px;
+}
+
+.crumb a {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.crumb a:hover {
+  color: var(--accent);
+}
+
+.reading-hero {
+  padding: 72px 0 48px;
+}
+
+.reading-title {
+  margin: 0 0 22px;
+  font-family: var(--serif);
+  font-weight: 340;
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.reading-lede {
+  margin: 0 0 18px;
+  max-width: 34em;
+  color: var(--muted);
+}
+
+.reading-meta {
+  margin: 0;
+  font-size: 0.84rem;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+}
+
+/* ---- the shelf ---- */
+
+.shelf {
+  padding-top: 8px;
+}
+
+.shelf-month {
+  padding: 34px 0;
+  border-top: 1px solid var(--hairline);
+}
+
+.shelf-date {
+  margin: 0 0 20px;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  color: var(--faint);
+}
+
+.shelf-books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px 24px;
+}
+
+.book-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  margin-bottom: 11px;
+  border-radius: 3px;
+  border: 1px solid var(--hairline);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.book-title {
+  display: block;
+  font-size: 0.93rem;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.book-author {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.86rem;
+  line-height: 1.35;
+  color: var(--faint);
+}
+
+@media (max-width: 480px) {
+  .reading-hero {
+    padding: 56px 0 40px;
+  }
+
+  .shelf-month {
+    padding: 28px 0;
+  }
+}

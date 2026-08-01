@@ -3,12 +3,13 @@
 :root {
   --bg: #161412;
   --ink: #eae4d8;
-  --muted: #988d7d;
-  --faint: #6e6558;
-  --accent: #c98f5f;
-  --hairline: rgba(234, 228, 216, 0.13);
+  --muted: #a89d8c;
+  --faint: #8b8173;
+  --accent: #48b6cc;
+  --accent-line: rgba(72, 182, 204, 0.5);
+  --hairline: rgba(234, 228, 216, 0.16);
   --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
-  --sans: "Karla", "Avenir Next", "Helvetica Neue", sans-serif;
+  --sans: "Schibsted Grotesk", "Inter", "Helvetica Neue", sans-serif;
 }
 
 * {
@@ -125,8 +126,8 @@ body {
   background: transparent;
   color: var(--muted);
   font-family: var(--sans);
-  font-size: 0.85rem;
-  letter-spacing: 0.06em;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
   cursor: pointer;
   transition: color 0.25s, border-color 0.25s;
 }
@@ -151,7 +152,7 @@ body {
 
 .pitch.playing #play-button {
   color: var(--accent);
-  border-color: rgba(201, 143, 95, 0.45);
+  border-color: var(--accent-line);
 }
 
 .pitch.playing .pitch-dot {
@@ -171,7 +172,7 @@ body {
 
 .pitch-note {
   color: var(--faint);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-style: italic;
 }
 
@@ -186,8 +187,8 @@ body {
   margin: 0 0 26px;
   font-family: var(--sans);
   font-weight: 600;
-  font-size: 0.78rem;
-  letter-spacing: 0.22em;
+  font-size: 0.84rem;
+  letter-spacing: 0.14em;
   text-transform: lowercase;
   color: var(--accent);
 }
@@ -212,7 +213,7 @@ body {
 a {
   color: var(--ink);
   text-decoration: underline;
-  text-decoration-color: rgba(201, 143, 95, 0.45);
+  text-decoration-color: var(--accent-line);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   transition: color 0.2s, text-decoration-color 0.2s;
@@ -281,15 +282,15 @@ a:focus-visible {
 .row-place {
   grid-area: place;
   color: var(--faint);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
 }
 
 .row-date {
   grid-area: date;
   color: var(--faint);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 }
 
 /* ---- elsewhere ---- */
@@ -328,8 +329,8 @@ a:focus-visible {
 .epigraph cite {
   font-family: var(--sans);
   font-style: normal;
-  font-size: 0.75rem;
-  letter-spacing: 0.22em;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
   color: var(--faint);
 }
 
@@ -339,8 +340,8 @@ a:focus-visible {
 
 .colophon {
   margin: 72px 0 0;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
   color: var(--faint);
 }
 
@@ -364,7 +365,8 @@ a:focus-visible {
 .page > .section.reveal:nth-of-type(2) { animation-delay: 0.52s; }
 .page > .section.reveal:nth-of-type(3) { animation-delay: 0.62s; }
 .page > .section.reveal:nth-of-type(4) { animation-delay: 0.72s; }
-.page > .coda.reveal { animation-delay: 0.82s; }
+.page > .section.reveal:nth-of-type(5) { animation-delay: 0.82s; }
+.page > .coda.reveal { animation-delay: 0.92s; }
 
 @keyframes rise {
   to {

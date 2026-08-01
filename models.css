@@ -12,8 +12,8 @@
 }
 
 .crumb a {
-  font-size: 0.85rem;
-  letter-spacing: 0.06em;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
   color: var(--muted);
   text-decoration: none;
 }
@@ -43,8 +43,8 @@
 
 .models-meta {
   margin: 0;
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
+  font-size: 0.84rem;
+  letter-spacing: 0.14em;
   color: var(--accent);
 }
 

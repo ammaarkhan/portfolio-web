@@ -12,8 +12,8 @@
 }
 
 .crumb a {
-  font-size: 0.85rem;
-  letter-spacing: 0.06em;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
   color: var(--muted);
   text-decoration: none;
 }
@@ -66,6 +66,14 @@
   margin-top: 48px;
 }
 
+/* logo mark rather than a photo — no frame */
+.story-hero-image.is-mark {
+  width: 168px;
+  border: 0;
+  border-radius: 0;
+  margin-top: 36px;
+}
+
 /* ---- sections ---- */
 
 .section-story {
@@ -107,22 +115,31 @@
 .metric-label {
   display: block;
   margin-top: 8px;
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
   color: var(--accent);
 }
 
 .metric-note {
   display: block;
-  margin-top: 8px;
-  font-size: 0.9rem;
+  margin-top: 10px;
+  font-size: 0.95rem;
   color: var(--faint);
 }
 
 /* ---- log ---- */
 
 .log-entry {
-  padding: 26px 0;
+  padding: 30px 0;
+}
+
+/* artifacts sit inside their own log entry */
+.log-entry .story-figure {
+  margin: 22px 0 0;
+}
+
+.log-entry .story-figure + .story-figure {
+  margin-top: 28px;
 }
 
 .log-entry + .log-entry {
@@ -130,9 +147,9 @@
 }
 
 .log-date {
-  margin: 0 0 8px;
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
+  margin: 0 0 10px;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
   color: var(--faint);
 }
 
@@ -176,7 +193,8 @@
 }
 
 .story-figure figcaption {
-  font-size: 0.85rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
   font-style: italic;
   color: var(--faint);
   max-width: 38em;
