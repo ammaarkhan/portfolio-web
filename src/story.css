@@ -14,12 +14,12 @@
 .crumb a {
   font-size: 0.9rem;
   letter-spacing: 0.05em;
-  color: var(--muted);
+  color: var(--accent);
   text-decoration: none;
 }
 
 .crumb a:hover {
-  color: var(--accent);
+  color: var(--ink);
 }
 
 /* ---- hero ---- */
