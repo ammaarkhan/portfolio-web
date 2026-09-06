@@ -110,3 +110,7 @@
     padding: 28px 0;
   }
 }
+
+.shelf-now {
+  color: var(--accent);
+}
