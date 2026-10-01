@@ -26,7 +26,7 @@ Redesigned July 3, 2026 from the old neon-dashed-cards look to "a typeset person
 - `index.html` + `styles.css` + `script.js` — homepage: hero → now → notebook → reading → before (index rows) → elsewhere → epigraph. `script.js` only handles the elevator-music toggle (`lift.mp3`, optimistic UI, loops). Reveal delays in `styles.css` are indexed by `nth-of-type`, so adding or removing a section means updating them.
 - `models.html` + `models.css` — **generated page**: the mental-models library. Never edit `models.html` by hand; regenerate it (see workflow).
 - `scripts/build_models.py` — generator for `models.html`.
-- `reading.html` + `reading.css` — books grouped by month, newest month first. Covers are self-hosted in `src/books/`. Books in progress sit in their own month block at the top with `<span class="shelf-now">&middot; currently reading</span>` inside the `.shelf-date`; the meta line under the title counts finished books and in-progress books separately ("13 books · 2 in progress · updated september 2026"). Source of truth for what was read was `~/Desktop/Ammaar/Weasal/Weasel-HQ/Monthly Emails/Archive/`, which stops at the June 2026 email; anything newer comes from Ammaar directly.
+- `reading.html` + `reading.css` — books grouped by month, newest month first. Covers are self-hosted in `src/books/`. Books in progress sit in their own month block at the top with `<span class="shelf-now">&middot; currently reading</span>` inside the `.shelf-date`; the meta line under the title counts finished books and in-progress books separately ("13 books · 2 in progress · updated september 2026"). Source of truth for what was read is the monthly update emails in `~/Desktop/Ammaar/02 Career/Monthly Updates/Archive/` (moved out of Weasel-HQ Oct 2026). Every sent email's reading gets added here as step 9 of that folder's checklist. When a meta-line count hits zero in progress, drop that part.
 - `src/brokol.html` + `src/parkview.html` — story pages, both styled by shared `src/story.css` (plus `../styles.css` for vars/atmosphere). The brokol log is one chronological timeline, **oldest first**, with each artifact sitting inside its own entry (`figure.story-figure` within `.log-entry`). There is no separate gallery section; new milestones go in as a dated entry with the image under the prose.
 - Images live in `src/`; keep them web-sized before committing (target < 300KB; `sips` works on this machine).
 
@@ -46,9 +46,9 @@ Redesigned July 3, 2026 from the old neon-dashed-cards look to "a typeset person
 6. Commit and push after every change (push = live deploy).
 7. After pushing, verify the deploy: poll `gh api repos/ammaarkhan/portfolio-web/pages/builds/latest --jq '.status'` until it reads "built" (typically under a minute), then curl ammaarkhan.com for a string from the change.
 
-## Current state (updated Sep 6, 2026)
+## Current state (updated Oct 1, 2026)
 
-Deployed: refreshed Weasel story page (chronological log with inline artifacts, real brand logo), the `reading` page (13 finished through July 2026, plus Principles and Man's Search for Meaning in progress since September 2026), updated numbers, and a type/colour pass for legibility.
+Deployed: refreshed Weasel story page (chronological log with inline artifacts, real brand logo), the `reading` page (15 finished through September 2026, none in progress; Principles is listed as "Principles (Part 1)", the only part he read), updated numbers, and a type/colour pass for legibility.
 
 Open items:
 - The separation from The ADHD Weasel is **not closed** (upfront due ~Aug 15 2026). The site deliberately still reads present tense, "Co-founder of The ADHD Weasel". Ammaar's call on when that changes, don't pre-empt it.
